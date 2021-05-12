@@ -1,3 +1,4 @@
+const exexSync = require('child_process').execSync;
 const fs = require('fs');
 const parser = require('fast-xml-parser');
 const glob = require('glob');
@@ -45,10 +46,12 @@ glob(search, (er, files) => {
     failures += s.failures || 0;
 
     const { testcase, ...suite } = s;
-    console.log(suite, s.testcase.length);
+    // console.log(suite, s.testcase.length);
   });
 
-  console.log('Total Tests:', tests);
-  console.log('Total Skipped:', skipped);
-  console.log('Total Failures:', failures);
+  console.log(`
+    Total Tests: ${tests}
+    Total Skipped: ${skipped}
+    Total Failures: ${failures}
+  `);
 });

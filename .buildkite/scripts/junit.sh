@@ -21,4 +21,4 @@ echo "--- :junit: Processing the junits"
 
 npm install fast-xml-parser glob
 
-node .buildkite/scripts/junit.js "$ARTIFACTS_DIR"
+node .buildkite/scripts/junit.js "$ARTIFACTS_DIR" | buildkite-agent annotate --style "info"
