@@ -13,7 +13,10 @@ const xmlOptions = {
 
 const testSuites = [];
 
-glob(path.join(DIR, '**', '*'), (er, files) => {
+const search = path.join(DIR, '**', '*');
+console.log('Searching', search);
+
+glob(search, (er, files) => {
   for (const file of files) {
     const obj = parser.parse(fs.readFileSync(file).toString(), xmlOptions);
     obj.testsuites.forEach((s) => {

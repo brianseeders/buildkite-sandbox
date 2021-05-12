@@ -19,6 +19,8 @@ trap cleanup EXIT
 
 echo "--- :junit: Processing the junits"
 
+echo "$ARTIFACTS_DIR"
+
 npm install fast-xml-parser glob
 
 node .buildkite/scripts/junit.js "$ARTIFACTS_DIR"
