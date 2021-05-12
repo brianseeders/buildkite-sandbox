@@ -50,8 +50,8 @@ glob(search, (er, files) => {
   });
 
   console.log(`
-Total Tests: ${tests}
-Total Skipped: ${skipped}
-Total Failures: ${failures}
+- Total Tests: ${tests}
+- Total Skipped: ${skipped}
+- Total Failures: ${failures}
   `);
 });
