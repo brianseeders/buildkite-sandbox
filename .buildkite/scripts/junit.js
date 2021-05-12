@@ -15,7 +15,7 @@ const xmlOptions = {
 const testSuites = [];
 
 const search = path.join(DIR, '**', '*.xml');
-console.log('Searching', search);
+// console.log('Searching', search);
 
 glob(search, (er, files) => {
   for (const file of files) {
