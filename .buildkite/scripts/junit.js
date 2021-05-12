@@ -35,8 +35,20 @@ glob(search, (er, files) => {
     });
   }
 
+  let tests = 0;
+  let skipped = 0;
+  let failures = 0;
+
   testSuites.forEach((s) => {
+    tests += s.tests;
+    skipped += s.skipped || 0;
+    failures += s.failures || 0;
+
     const { testcase, ...suite } = s;
     console.log(suite, s.testcase.length);
   });
+
+  console.log('Total Tests:', tests);
+  console.log('Total Skipped:', skipped);
+  console.log('Total Failures:', failures);
 });
