@@ -20,9 +20,9 @@ cat << EOF | buildkite-agent annotate --style "error"
 - dashboard app new charts library dashboard state Overriding colors on an area chart is preserved 
 - visualize app new charts library visualize ciGroup7 area charts should save and load with non-ascii characters 
 - visualize app visualize ciGroup9 data table should allow applying changed params 
+EOF
 
-----
-
+cat << EOF | buildkite-agent annotate --style "error"
 - CI Group #12 / discover async search with scripted fields query should show failed shards pop up 
 - CI Group #12 / maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
 - CI Group #12 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
@@ -40,10 +40,9 @@ cat << EOF | buildkite-agent annotate --style "error"
 - CI Group #12 / dashboard app new charts library dashboard state Overriding colors on an area chart is preserved 
 - CI Group #12 / visualize app new charts library visualize ciGroup7 area charts should save and load with non-ascii characters 
 - CI Group #12 / visualize app visualize ciGroup9 data table should allow applying changed params 
+EOF
 
----
-
-
+cat << EOF | buildkite-agent annotate --style "error"
 - CI Group #12 / discover async search ... ould show failed shards pop up 
 - CI Group #12 / maps app  layer geo g ... id aggregation with refresh timer 
 - CI Group #12 / apps machine learning  ... oint field displays index details 
