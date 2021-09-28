@@ -3,8 +3,7 @@
 set -euo pipefail
 
 cat << EOF | buildkite-agent annotate --style "error" --context "test1"
-*Test Failures*
----
+**Test Failures**
 - discover async search with scripted fields query should show failed shards pop up 
 - maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
 - apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
@@ -25,8 +24,7 @@ cat << EOF | buildkite-agent annotate --style "error" --context "test1"
 EOF
 
 cat << EOF | buildkite-agent annotate --style "error" --context "test2"
-*Test Failures*
----
+**Test Failures**
 - CI Group #12 / discover async search with scripted fields query should show failed shards pop up 
 - CI Group #12 / maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
 - CI Group #12 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
@@ -47,8 +45,7 @@ cat << EOF | buildkite-agent annotate --style "error" --context "test2"
 EOF
 
 cat << EOF | buildkite-agent annotate --style "error" --context "test3"
-*Test Failures*
----
+**Test Failures**
 - CI Group #12 / discover async search ... ould show failed shards pop up 
 - CI Group #12 / maps app  layer geo g ... id aggregation with refresh timer 
 - CI Group #12 / apps machine learning  ... oint field displays index details 
@@ -69,8 +66,7 @@ cat << EOF | buildkite-agent annotate --style "error" --context "test3"
 EOF
 
 cat << EOF | buildkite-agent annotate --style "error" --context "test5"
-*Test Failures*
----
+**Test Failures**
 - CI Group #12 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
 - CI Group #12 / context app context link in discover navigates to doc view from embeddable 
 - CI Group #12 / dashboard app new charts library dashboard state Overriding colors on an area chart is preserved 
