@@ -2,7 +2,8 @@
 
 set -euo pipefail
 
-cat << EOF | buildkite-agent annotate --style "error"
+cat << EOF | buildkite-agent annotate --style "error" --context "test1"
+### Test Failures
 - discover async search with scripted fields query should show failed shards pop up 
 - maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
 - apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
@@ -22,7 +23,8 @@ cat << EOF | buildkite-agent annotate --style "error"
 - visualize app visualize ciGroup9 data table should allow applying changed params 
 EOF
 
-cat << EOF | buildkite-agent annotate --style "error"
+cat << EOF | buildkite-agent annotate --style "error" --context "test2"
+### Test Failures
 - CI Group #12 / discover async search with scripted fields query should show failed shards pop up 
 - CI Group #12 / maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
 - CI Group #12 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
@@ -42,7 +44,8 @@ cat << EOF | buildkite-agent annotate --style "error"
 - CI Group #12 / visualize app visualize ciGroup9 data table should allow applying changed params 
 EOF
 
-cat << EOF | buildkite-agent annotate --style "error"
+cat << EOF | buildkite-agent annotate --style "error" --context "test3"
+### Test Failures
 - CI Group #12 / discover async search ... ould show failed shards pop up 
 - CI Group #12 / maps app  layer geo g ... id aggregation with refresh timer 
 - CI Group #12 / apps machine learning  ... oint field displays index details 
