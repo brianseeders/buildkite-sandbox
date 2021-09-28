@@ -88,21 +88,21 @@ EOF
 
 cat << EOF | buildkite-agent annotate --style "error" --context "test5"
 **Test Failures**
-- [job] [logs] CI Group #3 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
-- [job] [logs] CI Group #12 / context app context link in discover navigates to doc view from embeddable 
-- [job] [logs] CI Group #7 / dashboard app new charts library dashboard state Overriding colors on an area chart is preserved 
-- [job] [logs] CI Group #31 / dashboard app using current data dashboard unsaved listing lists unsaved changes to existing dashboards 
-- [job] [logs] CI Group #10 / dashboard app using current data full screen mode available in view mode 
-- [job] [logs] CI Group #1 / dashboard app using legacy data dashboard time dashboard without stored timed is saved 
-- [job] [logs] CI Group #11 / dashboard app using legacy data dashboard time picker Visualization updated when time picker changes 
-- [job] [logs] CI Group #3 / dashboard elements dashboard elements ciGroup10 input controls input control options updateFiltersOnChange is true "after all" hook for - "should add filter pill when item selected" 
-- [job] [logs] CI Group #6 / dashboard feature controls dashboard time to visualize security lens by value works without library save permissions can add a lens panel by - value 
-- [job] [logs] CI Group #3 / discover async search with scripted fields query should show failed shards pop up 
-- [job] [logs] CI Group #9 / machine learning  data visualizer index based with module_sample_logs  geo point field displays index details 
-- [job] [logs] CI Group #7 / maps app  documents source search hits should re-fetch documents with refresh timer 
-- [job] [logs] CI Group #1 / maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
-- [job] [logs] CI Group #3 / security app secure roles and permissions Kibana User navigating to Discover sees the generate CSV button 
-- [job] [logs] CI Group #4 / visualize app new charts library visualize ciGroup7 area charts should save and load with non-ascii characters 
-- [job] [logs] CI Group #5 / visualize app visualize ciGroup11 tag cloud chart should collapse the sidebar 
-- [job] [logs] CI Group #9 / visualize app visualize ciGroup9 data table should allow applying changed params 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #3 / apps machine learning basic license data visualizer index based with module_sample_logs  geo point field displays index details 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #12 / context app context link in discover navigates to doc view from embeddable 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #7 / dashboard app new charts library dashboard state Overriding colors on an area chart is preserved 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #31 / dashboard app using current data dashboard unsaved listing lists unsaved changes to existing dashboards 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #10 / dashboard app using current data full screen mode available in view mode 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #1 / dashboard app using legacy data dashboard time dashboard without stored timed is saved 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #11 / dashboard app using legacy data dashboard time picker Visualization updated when time picker changes 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #3 / dashboard elements dashboard elements ciGroup10 input controls input control options updateFiltersOnChange is true "after all" hook for - "should add filter pill when item selected" 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #6 / dashboard feature controls dashboard time to visualize security lens by value works without library save permissions can add a lens panel by - value 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #3 / discover async search with scripted fields query should show failed shards pop up 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #9 / machine learning  data visualizer index based with module_sample_logs  geo point field displays index details 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #7 / maps app  documents source search hits should re-fetch documents with refresh timer 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #1 / maps app  layer geo grid aggregation source heatmap should re-fetch geotile_grid aggregation with refresh timer 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #3 / security app secure roles and permissions Kibana User navigating to Discover sees the generate CSV button 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #4 / visualize app new charts library visualize ciGroup7 area charts should save and load with non-ascii characters 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #5 / visualize app visualize ciGroup11 tag cloud chart should collapse the sidebar 
+[[job]](http://www.google.com) [[logs]](http://www.google.com) CI Group #9 / visualize app visualize ciGroup9 data table should allow applying changed params 
 EOF
