@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KIBANAMACHINE_TOKEN="$(vault read -field=github_token secret/kibana-issues/dev/buildkite-github-credentials)"
+KIBANAMACHINE_TOKEN="$(vault read -field=github_token secret/kibana-issues/dev/kibanamachine)"
 git config --global credential.helper cache
 echo "protocol=https
 host=github.com
