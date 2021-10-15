@@ -1,6 +1,9 @@
 #!/bin/bash
 
 KIBANAMACHINE_TOKEN="$(vault read -field=github_token secret/kibana-issues/dev/buildkite-github-credentials)"
-echo "$KIBANAMACHINE_TOKEN" | gh auth login --with-token
-git config --global credential.https://github.com.username brianseeders
+git config --global credential.helper cache
+echo "protocol=https
+host=github.com
+username=token
+password=$KIBANAMACHINE_TOKEN" | git credential-cache store
 git clone https://github.com/elastic/kibana-ci-stats.git
