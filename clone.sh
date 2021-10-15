@@ -1,5 +1,3 @@
-#!/bin/bash
-
 retry() {
   local retries=$1; shift
   local delay=$1; shift
