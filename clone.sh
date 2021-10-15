@@ -19,6 +19,8 @@ retry() {
   done
 }
 
+git credential-cache exit
+
 {
   KIBANAMACHINE_TOKEN="$(retry 5 15 vault read -field=github_token secret/kibana-issues/dev/kibanamachine)"
   git config --global credential.helper cache
